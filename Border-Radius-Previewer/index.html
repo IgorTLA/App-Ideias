@@ -13,24 +13,27 @@
 <body>
     <h1>Border Radius Previewer</h1>
 
+    <div id="copy">
+        <input id="code" type="text" value="border-radius: ;" readonly>
+        <button class="btn" type="button" onclick="copy()">Click to copy!</button>
+    </div>
+
     <div id="container">
         <div id="tl" class="divInput">
-            <input type="text" id="input_tl" class="allInput" onchange="" placeholder="0">
+            <input type="text" id="input_tl" class="allInputs" placeholder="0" border='topLeft'>
         </div>
         <div id="tr" class="divInput">
-            <input type="text" id="input_tr" class="allInput" onchange="" placeholder="0">
+            <input type="text" id="input_tr" class="allInputs" placeholder="0" border='topRight'>
         </div>
         <div id="br" class="divInput">
-            <input type="text" id="input_br" class="allInput" onchange="" placeholder="0">
+            <input type="text" id="input_br" class="allInputs" placeholder="0" border='bottomRight'>
         </div>
         <div id="bl" class="divInput">
-            <input type="text" id="input_bl" class="allInput" onchange="" placeholder="0">
+            <input type="text" id="input_bl" class="allInputs" placeholder="0" border='bottomLeft'>
         </div>
 
 
-        <div id="box">
-            <textarea id="code" readonly></textarea>
-        </div>
+        <div id="box"></div>
     </div>
 
     <script src="./script.js"></script>
