@@ -16,7 +16,7 @@ h1 {
     display: block;
     color: white;
     width: 500px;
-    margin: auto;
+    margin: 60px auto;
     text-align: center;
     text-shadow: 0.12em 0.12em black;
 }
@@ -37,9 +37,22 @@ input {
     color: #fff;
 }
 
+textarea {
+    background: #fafafc;
+    border: 1px solid #a3a3a3;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    line-height: 20px;
+    padding: 9px 10px;
+    color: #2f2f2f;
+    overflow: hidden;
+}
+
 #container {
     position: relative;
-    width: 500px;
+    width: 550px;
     margin: 50px auto;
 }
 
@@ -88,10 +101,11 @@ input {
     bottom: 0;
 }
 
-
 #box {
-    width: 500px;
+    width: 460px;
     height: 200px;
-    background: white;
-    border: 2px solid black;
+    background: #e9eaee;
+    border: 2px solid #ffffff;
+    margin: 0 auto;
+    padding: 40px;
 }
