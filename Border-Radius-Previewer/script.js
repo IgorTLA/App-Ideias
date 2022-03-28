@@ -1,6 +1,10 @@
 let box = document.querySelector('#box'),
     inputs = document.querySelectorAll('.allInputs'),
     dataBorderRadius = {
+        'leftTop': 0,
+        'rightTop': 0,
+        'rightBottom': 0,
+        'leftBottom': 0,
         'topLeft': 0,
         'topRight': 0,
         'bottomRight': 0,
@@ -18,7 +22,7 @@ inputs.forEach((input) => {
 });
 
 function draw() {
-    let radiusValues = `${dataBorderRadius.topLeft} ${dataBorderRadius.topRight} ${dataBorderRadius.bottomRight} ${dataBorderRadius.bottomLeft}`;
+    let radiusValues = `${dataBorderRadius.leftTop} ${dataBorderRadius.rightTop} ${dataBorderRadius.rightBottom} ${dataBorderRadius.leftBottom} / ${dataBorderRadius.topLeft} ${dataBorderRadius.topRight} ${dataBorderRadius.bottomRight} ${dataBorderRadius.bottomLeft}`;
 
     box.style.borderRadius = radiusValues;
 
