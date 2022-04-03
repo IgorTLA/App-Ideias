@@ -14,29 +14,33 @@
     <main class="container">
         <h1>Calculator</h1>
         <div id="calculator">
-            <input id="viewer" type="text" maxlength="8" readonly>
-            <button id="clear" type="button">C</button>
-            <button id="allClear" type="button">AC</button>
+            <div class="output">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
 
-            <button type="button">7</button>
-            <button type="button">8</button>
-            <button type="button">9</button>
-            <button type="button">+</button>
+            <button id="allClear" type="button" data-all-clear>AC</button>
+            <button id="clear" type="button" data-clear>Del</button>
 
-            <button type="button">4</button>
-            <button type="button">5</button>
-            <button type="button">6</button>
-            <button type="button">-</button>
+            <button type="button" data-num>7</button>
+            <button type="button" data-num>8</button>
+            <button type="button" data-num>9</button>
+            <button type="button" data-opr>+</button>
 
-            <button type="button">1</button>
-            <button type="button">2</button>
-            <button type="button">3</button>
-            <button type="button">×</button>
+            <button type="button" data-num>4</button>
+            <button type="button" data-num>5</button>
+            <button type="button" data-num>6</button>
+            <button type="button" data-opr>-</button>
 
-            <button type="button">0</button>
-            <button type="button">.</button>
-            <button id="equal" type="button">=</button>
-            <button type="button">÷</button>
+            <button type="button" data-num>1</button>
+            <button type="button" data-num>2</button>
+            <button type="button" data-num>3</button>
+            <button type="button" data-opr>×</button>
+
+            <button type="button" data-num>0</button>
+            <button type="button" data-num>.</button>
+            <button id="equal" type="button" data-equal>=</button>
+            <button type="button" data-opr>÷</button>
         </div>
     </main>
 

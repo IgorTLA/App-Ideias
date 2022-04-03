@@ -1,15 +1,12 @@
-* {
-    margin: 0;
+*, *::before, *::after {
     box-sizing: border-box;
-    font-family: Tahoma;
-}
-
-html {
-    background: rgb(158, 158, 158);
+    font-family: Tahoma, sans-serif;
 }
 
 body {
-    display: block;
+    padding: 0;
+    margin: 70px auto;
+    background: rgb(158, 158, 158);
 }
 
 h1 {
@@ -49,7 +46,7 @@ button#equal {
 
 #calculator {
     width: 350px;
-    height: 400px;
+    height: 430px;
     display: flex;
     flex-flow: row wrap;
     margin: 20px auto;
@@ -57,9 +54,29 @@ button#equal {
     justify-content: space-between;
 }
 
-#viewer {
+.output {
+    background-color: rgba(255, 255, 255, .75);
     width: 350px;
-    height: 40px;
+    height: 80px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-viewer {
+    color: rgba(0, 0, 0, .5);
+    font-size: 1.5rem;
+}
+
+.output .current-viewer {
+    color: black;
+    font-size: 2.5rem;
 }
 
 #clear, #allClear {
